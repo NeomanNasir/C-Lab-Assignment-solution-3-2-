@@ -7,7 +7,7 @@ double u_cal(double u, int n)
     double temp = u;
     int j;
     for(j = 1; j < n; j++)
-        temp *= (u+j);
+        temp *= (u-j);
     return temp;
 }
 
