@@ -3,13 +3,6 @@
 ///U can solve titas or Sastry book maths.
 ///http://www.nptel.ac.in/courses/122104018/node117.html
 
-int fact(int n)
-{
-    int f = 1, i;
-    for(i = 2; i <= n; i++) f *= i;
-    return f;
-}
-
 int main()
 {
     int n, i, j, k;
@@ -47,7 +40,7 @@ int main()
     k = k-1;
     for(i = 1; i < (n-k); i++)
     {
-        sum += pow(-1,i-1)*(y[k][i])/(double)fact(i);
+        sum += pow(-1,i-1)*(y[k][i]/i);
     }
 
     ans = (1/h)*sum;
