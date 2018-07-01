@@ -2,12 +2,6 @@
 ///Calculating First derivate by using newton's backward method.
 ///U can solve titas or Sastry book maths.
 
-int fact(int n)
-{
-    int f = 1, i;
-    for(i = 2; i <= n; i++) f *= i;
-    return f;
-}
 
 int main()
 {
@@ -47,7 +41,7 @@ int main()
     for(i = 1; i <= k; i++)
     {
         printf("%.4lf\n", y[k][i]);
-        sum += (y[k][i])/(double)fact(i);
+        sum += (y[k][i])/i;
     }
 
     ans = (1/h)*sum;
