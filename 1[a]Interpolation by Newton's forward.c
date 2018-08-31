@@ -58,7 +58,7 @@ int main() ///program works from the main function
     {
         sum += (u_cal(u,i)*y[0][i])/fact(i);
     }
-    printf("\nValue at %.0lf is %lf\n", a, sum);
+    printf("\nValue at %f is %lf\n", a, sum);
 
     return 0;
 }
